@@ -22,5 +22,10 @@
     "postcss": "^8.4.29",
     "prettier": "3.0.3",
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "axios": "^1.5.0"
   }
 }

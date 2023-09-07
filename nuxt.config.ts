@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -9,9 +10,8 @@ export default defineNuxtConfig({
   },
   components: [
     {
-      path: "~/components",
-      extensions: [".vue"],
+      path: '~/components',
+      extensions: ['.vue'],
     },
   ],
-  css: ["@/assets/css/main.css"],
 });
