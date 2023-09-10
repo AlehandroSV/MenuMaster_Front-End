@@ -3,7 +3,7 @@ import api from '../';
 
 export const login = async (data: IAuth) => {
   api()
-    .post('authentication', data)
+    .post('login', data)
     .then((res) => {
       const cookie = useCookie<string>('BearerToken');
       cookie.value = res.data;
