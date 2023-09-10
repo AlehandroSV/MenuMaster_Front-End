@@ -14,7 +14,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "npx prettier . --write --fix",
+    "lint": "npx prettier . --write",
+    "lint:fix": "npx prettier . --fix",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
