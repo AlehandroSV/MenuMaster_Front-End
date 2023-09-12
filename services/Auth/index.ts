@@ -6,7 +6,7 @@ export const login = async (data: IAuth) => {
     .post('login', data)
     .then((res) => {
       const cookie = useCookie<string>('BearerToken');
-      cookie.value = res.data;
+      cookie.value = res.data.access_token;
 
       navigateTo('/');
     });
@@ -14,6 +14,8 @@ export const login = async (data: IAuth) => {
 
 export const logout = () => {
   const cookie = useCookie<string | null>('BearerToken');
+
+  console.log('deslogou');
 
   cookie.value = null;
 

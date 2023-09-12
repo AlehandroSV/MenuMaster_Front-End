@@ -40,7 +40,7 @@ export default {
 
       if (!this.v$.$error) {
         login({
-          username: this.state.email,
+          email: this.state.email,
           password: this.state.password,
         });
       } else {
