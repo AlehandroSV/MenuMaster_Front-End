@@ -1,5 +1,7 @@
 {
   "endOfLine": "lf",
-  "singleQuote": true,
-  "tabWidth": 2
+  "jsxSingleQuote": true,
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true
 }
